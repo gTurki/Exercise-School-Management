@@ -6,7 +6,6 @@ import com.example.exerciseschoolmanagement.Entity.Address;
 import com.example.exerciseschoolmanagement.Entity.Teacher;
 import com.example.exerciseschoolmanagement.Repository.AddressRepository;
 import com.example.exerciseschoolmanagement.Repository.TeacherRepository;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
 
+import java.util.Set;
+
 @Entity
 @Getter
 @Setter
@@ -39,4 +41,7 @@ public class Teacher {
     @OneToOne(cascade = CascadeType.ALL, mappedBy = "teacher", orphanRemoval = true)
     @PrimaryKeyJoinColumn
     private Address address;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "teacher")
+    private Set<Course> courses;
 }
